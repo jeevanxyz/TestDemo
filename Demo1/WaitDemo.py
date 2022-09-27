@@ -19,7 +19,6 @@ password=driver.find_element(By.XPATH,"//input[@name='pwd']")
 password.send_keys("manager")
 loginbtn=driver.find_element(By.XPATH,"//a[@id='loginButton']")
 loginbtn.send_keys(Keys.ENTER)
-wait=WebDriverWait(driver,30)
-wait.until(EC.element_to_be_clickable(By.XPATH("//span[text()='Add Tasks from the List']")),"checking the element is clickable")
+
 
 
